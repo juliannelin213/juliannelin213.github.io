@@ -56,11 +56,10 @@
     </div>
   </nav>
   <div id="home">
-    <!-- <div class="background"><img src="/img/bg.jpg"></div> -->
-    <div class="home-text">
+    <div class="home-title">
       Hello, I'm Julianne Lin
     </div>
-    <div class="home-subtext">
+    <div class="home-text">
       Incoming Software Engineer at Meta <br>
       Previously at Coursera, Microsoft
     </div>
@@ -75,51 +74,69 @@
       </a>
     </div>
   </div>
-  <div id="about">
-    <div class="about">
-      <div class="about-container">
-        <div class="about-title">
-          About me
+  <div class="about" id="about">
+    <div class="about-container">
+      <div class="about-title">
+        About me
+      </div>
+      <div class="about-content">
+        <div class="about-intro">
+          I am currently in my forth year at University of Toronto with double majors in Statistics and Cognitive
+          Science. I am interested in full-stack web development and software engineering in general. I am also
+          equipped with data analytic skills through upper statistics courses that I have taken.
+          <div class="skills-container">
+            <div class="skills-big-title">Skills</div>
+            <div class="skills-title" id="skills-title-1">
+              Front-end
+            </div>
+            <div class="skills-details" id="skills-details-1"> HTML, CSS, JavaScript, React.js, jQuery, Bootstrap,
+              SASS/SCSS</div>
+            <div class="skills-title" id="skills-title-2"> Back-end
+            </div>
+            <div class="skills-details" id="skills-details-2">Java, Python, SQL, NoSQL</div>
+            <div class="skills-title" id="skills-title-3"> Full-stack
+            </div>
+            <div class="skills-details" id="skills-details-3"> Express.js, Meteor.js, Node.js</div>
+            <div class="skills-title" style="width:30%;" id="skills-title-4">Data analytic
+            </div>
+            <div class="skills-details" id="skills-details-4">R, MATLAB, Stan</div>
+          </div>
         </div>
-        <div class="about-content">
-          <div class="about-intro">
-            I am currently in my forth year at University of Toronto with double majors in Statistics and Cognitive
-            Science. I am interested in full-stack web development and software engineering in general. I am also
-            equipped with data analytic skills through upper statistics courses that I have taken.
-            <div class="skills-container">
-              <div style="color:#b19386;  font-family: 'Work Sans', sans-serif;">Skills</div>
-              <div class="skills-title">
-                Front-end
-              </div>
-              <div class="skills-details"> HTML, CSS, JavaScript, React.js, jQuery, Bootstrap, SASS/SCSS</div>
-              <div class="skills-title"> Back-end
-              </div>
-              <div class="skills-details">Java, Python, SQL, NoSQL</div>
-              <div class="skills-title"> Full-stack
-              </div>
-              <div class="skills-details">Express.js, Meteor.js, Node.js</div>
-              <div class="skills-title" style="width:25%;"> Data analytic
-              </div>
-              <div class="skills-details">R, MATLAB, Stan</div>
+        <div class="about-timeline">
+          <div class="timeline-container">
+            <div class="timeline">
+              <ul>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">May - August, 2020 </h3>
+                    <h1>Coursera</h1>
+                    <p>Software Engineering Intern</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">June - September, 2021 </h3>
+                    <h1>Microsoft</h1>
+                    <p>Software Engineering Intern</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">July 2022</h3>
+                    <h1>Meta</h1>
+                    <p>Full-time Software Engineer</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="about-skills-container">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit mauris eget sodales efficitur.
-            Aenean dictum laoreet accumsan. Vestibulum rutrum vel tellus vel ultricies. Sed et gravida orci.
-            Vestibulum eget dui mollis erat vehicula hendrerit ut non ex. Fusce a mauris odio. Sed sit amet imperdiet
-            augue. Praesent quis pulvinar dui. Cras neque tortor, feugiat nec porta at, volutpat at eros. Nulla
-            facilisis tempor odio pellentesque pulvinar. Ut bibendum efficitur magna. Ut vel pellentesque nulla. Proin
-            tincidunt felis eu metus volutpat, pulvinar iaculis augue posuere. Nullam eros justo, eleifend eu varius
-            sed, tempus ut libero.
-          </div>
 
-        </div>
       </div>
     </div>
   </div>
   </div>
   <div id="contact" class="contact">
-    <div class="about-title">
+    <div class="contact-title">
       CONTACT
     </div>
     <div class="contact-email">
@@ -129,16 +146,12 @@
     <div>
       <a href="https://github.com/jlin213" class="contact-visit">View my projects &#8594; </a>
     </div>
-    <!-- Button trigger modal -->
     <button type="button" class="resume-btn" data-toggle="modal" data-target="#myModal">View Resume</button>
-    <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg">
-        <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <!-- <div class="modal-title">Modal Header</h4> -->
           </div>
           <div class="modal-body">
             <embed src="resume.pdf" frameborder="0" width="100%" height="600px">
@@ -157,52 +170,14 @@
         Software Engineer <br>
         Toronto
       </div>
-      <div style="margin-left:12vw; padding-bottom:2.5vw;">
         <a href="https://www.linkedin.com/in/julianne-lin/" class="outro-link">LINKEDIN</a>
         <a href="https://github.com/jlin213" class="outro-link">GITHUB</a>
         <a href="https://www.facebook.com/juliannelinnn/" class="outro-link"> FACEBOOK</a>
         <a href="https://www.instagram.com/julianne.linn/" class="outro-link">INSTAGRAM</a>
-      </div>
       <footer class="end-footer"> <small>&copy; Copyright 2021, Julianne Lin. All Rights Reserved</small> </footer>
     </div>
   </div>
 
-
-
-
-
-
-
-
-  <!-- <div id="contact" class="contact-container">
-    <div class="contact-chat">
-      Want to chat more?
-    </div>
-    <div class="contact-line"></div>
-    <div class="contact-text"> Please fill out the form to get in touch with me through email.</div>
-    <form action="mailto:julianne.lin@mail.utoronto.ca" method="GET" target="_blank" id="contact_form"
-      class="contact-form contact-grid">
-      <div class="form-field email">
-        <label class="label" for="email">Email *</label>
-        <input id="email" type="email" required>
-      </div>
-      <div class="form-field">
-        <label class="label" for="subject">Subject</label>
-        <input name="subject" id="subject" type="text" class="input" value="">
-      </div>
-      <div class="form-field">
-        <label class="label" for="body">Body</label>
-        <textarea class="textarea" name="body" id="body"></textarea>
-      </div>
-      <div><input type="submit" value="Send" class="btn"></div>
-    </form>
-  </div> -->
-  <!-- <button class="btn" onclick="window.location.href='https://www.linkedin.com/in/julianne-lin';"> <i
-      class="fab fa-linkedin fa-3x"></i> </button>
-    <h5>
-      <button class="btn" onclick="window.location.href='https://github.com/jlin213';"> <i
-          class="fab fa-github fa-3x"></i> </button>
-    </h5> -->
   </div>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
