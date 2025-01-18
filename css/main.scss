@@ -1,0 +1,1028 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+html {
+  cursor: auto !important;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+
+$fadeUp: 100px;
+$fallDown: -200px;
+$delay: 50ms;
+$duration: 5s;
+
+.text-container {
+    width: 100%;
+    color: white;
+    font-family: 'Cutive Mono', monospace;
+    letter-spacing: 4px;
+    font-size: 100px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+}
+
+.nav-item1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  color:rgba(0, 0, 0, 0.4);
+  font-size: 1em;
+  position: relative;
+  display: inline-block;
+}
+// Change color
+.nav-item1:hover {
+  color: rgba(0, 0, 0, 0.7);
+  // border-bottom: 3px solid rgba(250, 250, 250, 0.4); 
+}
+
+.nav-item1:after{
+  content: "";
+  position: absolute;
+  left: 12%;
+  top: 80%;
+  width: 0;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: width .3s ease-in-out;
+}
+
+.nav-item1:hover:after {
+  width: 80%;
+}
+// .nav-line{
+//   width: 50px;
+//   height: 3px;
+//   transition: all 0.4s ease-in-out;
+//   z-index: 1;
+//   color: #d5d5d8;
+// }
+
+.nav-item2{
+  color: #222 !important 
+}
+
+.nav-item2:after{
+  background-color: #191919 !important
+}
+// .nav-item2:hover:after {
+//   width: 80% !important
+// }
+
+
+#home {
+  /* this is needed or the background will be offset by a few pixels at the top */
+  overflow: auto;
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  // background-image: url("/img/bg.jpg");
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+}
+.background{
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+.home-text {
+  padding-top: 4.5em;
+  font-family: 'Work Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight:700;
+  font-size: 3.5vw;
+  text-align: left;
+  margin-left: 12vw;
+  // padding-top: 10%;
+}
+
+.home-subtext{
+  font-family: 'Work Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight:500;
+  font-size: 1.2vw;
+  text-align: left;
+  margin-left: 12vw;
+}
+
+.mouse {
+  max-width: 1.6rem;
+  width: 100%;
+  height: auto;
+}
+
+.mouse-scroll {
+  margin-top: 19vw;
+}
+.scroll {
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+  animation-iteration-count: infinite;
+  transform-origin: 50% 20.5px;
+  will-change: transform, opacity;
+  opacity: 1;
+}
+
+.scroll-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes scroll {
+  0%,
+  20% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  100% {
+    transform: translateY(36px) scaleY(2);
+    opacity: 0;
+  }
+}
+
+.about{
+  padding-top: 3.75em;
+  padding-left: 5em;
+  padding-right: 5em;
+  background-color: #f8f8f8;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 13%;
+  position: relative;
+}
+
+.about-title{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 5vw;
+}
+.about-line{
+  width: 6%; 
+  height: 1px;
+  z-index: 1;    
+  margin-left: 10%;
+  display: block;
+  position: absolute;
+  background-color: black;
+}
+
+.about-content{
+  margin-top: 2vw;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1vw;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 5vw;
+}
+
+.about-intro {
+  width: 45%;
+  float: left;
+  font-size: 1.3vw;
+  font-weight:500;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 2vw;
+}
+
+.skills-container{
+  float: left;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 2vw;
+  width: 100%;
+  height: 100%;
+}
+
+.skills-title{
+  float:left;
+  width: 20%;
+}
+
+.skills-details{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9vw;
+}
+
+.about-skills-container{
+  margin-left: 60%;
+  margin-right: 10%;
+}
+.about-skills-title{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500; 
+  color: rgb(85,85,85);
+  font-size: 1vw;
+  padding-bottom: 1vw;
+}
+
+.about-skills{
+  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;  
+  font-weight: 600; 
+  font-size: 1vw;
+  color: #020101;
+  line-height: 31px;
+}
+
+.msft{
+  transform: scale(0.15,0.15);
+  margin-top: -70%;
+  margin-left: -20%;
+}
+.coursera{
+  transform: scale(0.22, 0.22);
+  margin-top: -30%;
+  margin-left: 10%;
+  background: #d4d4d4;
+}
+.about-subtitle{
+  font-family: "Old Standard TT",serif;
+  margin-top:2%;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.about-subtitle-skills{
+  margin-left: 43%;
+}
+.about-subtitle-projects{
+  margin-left: 41.5%;
+}
+.about-subtitle-more{
+  margin-left: 41.5%;
+}
+
+
+.about-line2{
+  width: 5%; 
+  height: 1px;
+  z-index: 1;    
+  margin-left: 15.5%;
+  margin-top: 3%;
+  display: block;
+  position: absolute;
+  background-color: black;
+}
+//resume modal
+.resume-btn{
+  margin-left:75%;
+  background-color: #191919;
+  color: white;
+  border: 2px solid #191919;
+  display: inline-block;
+  margin-top: 2%;
+  border-radius: 0px;
+  line-height: 1vw; 
+  padding: 1vw 1.3vw;
+}
+.resume-btn:hover{
+    background-color: white;
+    color: #191919;
+}
+
+
+.resume-btn:active {
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+.outro{
+  background-color: #000;
+  height:40%;
+}
+
+.outro-name{
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 2vw;
+  font-weight: 700;
+  margin-left: 12vw;
+  padding-top: 7vw;
+}
+
+.outro-text{
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 1vw;
+  font-weight: 500;
+  margin-left: 12vw;
+  padding-top: 1vw;
+  line-height: 25px;
+}
+
+.outro-link{
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 0.8vw;
+  font-weight: 800;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  text-decoration: none;
+}
+.outro-link:hover{
+  text-decoration: none;
+  color: rgb(247,247,247);
+}
+
+.contact-layout {
+  margin-left: 100px;
+}
+.contact-container{ 
+  padding-top: 9%;
+  padding-bottom: 6%;
+}
+.contact-chat {
+  color: #555;
+  font-family: "Old Standard TT",serif;
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+}
+.contact-text {
+  font-family: "Roboto";
+  font-size: 18px;
+  margin-left: 34%;
+  margin-top:2%;
+  color: #555;
+}
+.contact-line{
+  width: 5%; 
+  height: 1px;
+  z-index: 1;    
+  margin-left: 48%;
+  margin-top: 0.5%;
+  display: block;
+  position: absolute;
+  background-color: black;
+}
+
+/* ============ .contact-form CSS grid ============ */
+
+/* contact form CSS grid layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 40%;
+  grid-gap: 35px;
+}
+
+/* grid item */
+.submit-button {
+  justify-self: center;
+}
+
+@media screen and (min-width: 736px) {
+  
+  .contact-grid {
+    margin-left: 34%;
+    display: grid;
+    grid-template-columns: repeat(1, 52%);
+    grid-template-rows: auto;
+    grid-gap: 35px;
+  }
+
+  /* --- grid items --- */
+  .comment-box {
+    grid-column: 1 / -1;
+  }
+  
+  .submit-button {
+    justify-self: start;
+  }
+  
+}
+
+/* ============ form styles ============ */
+
+/* adds space on top for label */
+.contact-form {
+  margin-top: 30px;
+}
+
+/* positioning .form-field relative, so .lable can be positioned on-top (absolute) */
+.form-field {
+  position: relative;
+}
+
+/* label styles */
+.label {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #555;
+  cursor: text;
+}
+
+/* input styles */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+
+  border: none;
+  height: 40px;
+  padding: 0 10px;
+  width: 100%;
+  background-color: rgb(247,247,247);
+  color: rgb(85,85,85);
+}
+
+/* text area styles */
+textarea {
+  height: 140px !important;
+  padding: 10px 10px;
+  
+}
+
+
+/* ============ submit button styles ============ */
+.btn {
+  background-color: #191919;
+  color: white;
+  border: 2px solid #191919;
+  display: inline-block;
+  padding: 12px 30px;
+  min-width: 100px;
+  margin-top: 15px;
+  font-weight: 500;
+  margin-left: 40%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #191919;
+}
+
+.btn:active {
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+
+// deprecated
+
+.about-me {
+  min-height: 100%;
+  height: 100%;
+  font-size: 4.2em;
+  text-align: center;
+  padding-bottom: 1em;
+  padding-left: 0.3em;
+  font-family: bookman-jf-pro, serif;
+}
+
+.aboutButton,
+.projectButton {
+  display: inline-block;
+  border-radius: 2px;
+  border-color: black;
+  border-width: 1px;
+  text-align: center;
+  font-size: 19px;
+  padding: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Raleway";
+}
+
+.aboutButton {
+  margin-top: 1em;
+  margin-left: 5em;
+}
+.aboutButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.aboutButton span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.aboutButton:hover span {
+  padding-right: 25px;
+}
+
+.aboutButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.contact{
+  padding-top: 3.75em;
+  height: 60%;
+  padding-left: 5em;
+  padding-right: 5em;
+  background-color: white;
+  min-height: 60%;
+  width: 100%;
+  position: relative;
+}
+
+.contact-email{
+  margin-top: 2vw;
+  font-family: 'Inter', sans-serif;
+  color: rgba(0, 0, 0, 1.0);
+  font-weight:500;
+  font-size: 1.2vw;
+  text-align: left;
+  margin-left: 5.2vw;
+}
+
+.contact-visit{
+  margin-left:5.1vw;
+  color: rgba(0, 0, 0, 0.6);
+}
+.contact-visit:hover{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.4);
+}
+
+
+.end-footer{
+  color:white;
+  margin-left:12vw;
+}
+
+
+.projectButton {
+  margin-bottom: 10vw;
+  margin-left: 22%;
+  margin-top: 10%;
+}
+
+#projects {
+  padding-top: 3vw;
+  padding-bottom: 12.7vw;
+  background-color: #191919;
+}
+.projects {
+  font-size: 3vw;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: white;
+  font-family: bookman-jf-pro, serif;
+}
+.rowm {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+}
+
+.projects-title {
+  margin-top: 20px;
+  font-family: bookman-jf-pro, serif;
+  font-size: 25px;
+}
+.projects-text {
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  margin: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.image-text {
+  padding: 1vw;
+  font-size: 18px;
+  color: white;
+}
+.e7visit {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  width: 200px;
+  height: 50px;
+}
+
+.e7visit:hover {
+  background: black;
+  color: white;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 28vw;
+  height: 19vw;
+  // border: 1px solid #f1f1f1;
+  z-index: 1;
+  float: left;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+#e7project {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-section-text {
+  margin-left: 20px;
+  margin-top: 0 px;
+}
+.project-header {
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+}
+.line {
+  display: block;
+  border: 0;
+  border-radius: 5px;
+  border-top: 3px solid #ffffff;
+  margin: 1em 0;
+  width: 250px;
+  padding: 0;
+}
+.project-content {
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  color: white;
+}
+
+.fa {
+  padding-left: 6vw;
+  padding-bottom: 2vw;
+  font-size: 6vw;
+}
+
+
+
+
+/* ============ universal styles ============ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .mouse{
+      width: 70%; 
+    }
+    .mouse-scroll{
+      padding-top:25vw;
+    }
+    #home{
+      min-height: 80%;
+      height:80%;
+    }
+    .about{
+      padding-left: 7vw;
+    }
+    .about-skills{
+      line-height: 2vw;
+    }
+    .contact-visit{
+      font-size: 1vw;
+      margin-top: -2vw;
+    }
+    .resume-btn{
+      font-size: 1.5vw;
+    }
+    .contact{
+      min-height:30%;
+      height:30%;
+      padding-left: 7vw;
+    }
+    .end-footer{
+      font-size: 1vw;
+    }
+    .outro-text{
+      line-height:2vw;
+    }
+    .outro{
+      height: 15%;
+    }
+  }
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

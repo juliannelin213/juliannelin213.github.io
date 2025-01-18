@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144238099-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144238099-1');
+  </script>
+  <meta charset="utf-8">
+  <title>Julianne Lin Software Developer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/449235018d.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-inverse fixed-top navbar-fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse">
+      <div class="navbar-nav ml-auto">
+        <a id="nav-item-home" class="nav-item nav-link active nav-item1" href="#home">Home<span class="sr-only">(current)</span></a>
+        <a id="nav-item-about" class="nav-item nav-link nav-item1" href="#about">About</a>
+        <a id="nav-item-contact" class="nav-item nav-link nav-item1" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <div id="home">
+    <div class="home-text home-line1">
+      Hello, my name is
+    </div>
+    <div class="home-name-text">
+      JULIANNE
+    </div>
+    <div class="home-text home-line3">
+      Web Developer | Student
+    </div>
+    <div class="mouse-scroll">
+      <a class="scroll-link" href="#about">
+        <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+          <g fill="none" fill-rule="evenodd">
+            <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36" />
+            <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF" />
+          </g>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div id="about">
+    <div class="about">
+      <div class="about-left">
+        <div class="about-title">
+          About me
+        </div>
+        <div class="about-line"></div>
+        <div class="about-content">
+          I am currently entering my third year at University of Toronto with double majors in Statistics and Cognitive
+          Science. I am interested in full-stack web development and software engineering in general. I am currently
+          interning at Coursera on the Growth-Degrees team for this summer.
+          <br>
+          <!-- <div class="about-subtitle about-subtitle-skills">Skills</div>
+          Programming Languages: Java, Python, SQL, NoSQL, R, MATLAB <br>
+          Web Development: HTML, CSS, JavaScript, React.js, Express.js, Node.js, jQuery Meteor.js, Bootstrap, SASS/SCSS
+          <br>
+          Technologies/Libraries: MongoDB, MySQL, JavaFX, Pygame, Git -->
+          <!-- <div class="about-subtitle about-subtitle-projects">Projects</div>
+          All of my projects are open sourced on my github. I have built applications in different areas such as
+          full-stack MERN websites,
+          backend Java applications, and more. -->
+          <!-- <br>
+          <div class="about-subtitle about-subtitle-more">Resume</div>
+          Feel free to view or download my resume: -->
+        </div>
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn-sm resume-btn" data-toggle="modal" data-target="#myModal">View</button> -->
+        <!-- Modal -->
+        <!-- <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <embed src="resume.pdf" frameborder="0" width="100%" height="600px">
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="about-line2"></div> -->
+      </div>
+      <div class="about-img">
+        <img src="msft.png" class="msft"/>
+        <img src="coursera.png" class="coursera"/> 
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="contact-container">
+    <div class="contact-chat">
+      Want to chat more?
+    </div>
+    <div class="contact-line"></div>
+    <div class="contact-text"> Please fill out the form to get in touch with me through email.</div>
+    <form action="mailto:julianne.lin@mail.utoronto.ca" method="GET" target="_blank" id="contact_form"
+      class="contact-form contact-grid">
+      <div class="form-field email">
+        <label class="label" for="email">Email *</label>
+        <input id="email" type="email" required>
+      </div>
+      <div class="form-field">
+        <label class="label" for="subject">Subject</label>
+        <input name="subject" id="subject" type="text" class="input" value="">
+      </div>
+      <div class="form-field">
+        <label class="label" for="body">Body</label>
+        <textarea class="textarea" name="body" id="body"></textarea>
+      </div>
+      <div><input type="submit" value="Send" class="btn"></div>
+    </form>
+  </div>
+  <!-- <button class="btn" onclick="window.location.href='https://www.linkedin.com/in/julianne-lin';"> <i
+      class="fab fa-linkedin fa-3x"></i> </button>
+    <h5>
+      <button class="btn" onclick="window.location.href='https://github.com/jlin213';"> <i
+          class="fab fa-github fa-3x"></i> </button>
+    </h5> -->
+  </div>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

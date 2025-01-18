@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144238099-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144238099-1');
+  </script>
+  <meta charset="utf-8">
+  <title>Julianne Lin Software Developer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/449235018d.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-inverse fixed-top">
+    <div class="navbar-collapse collapse">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active nav-item1" href="#">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link nav-item1" href="#">About</a>
+          <a class="nav-item nav-link nav-item1" href="#">Projects</a>
+          <a class="nav-item nav-link nav-item1" href="#">Contact</a>
+        </div>
+    </div>
+  </nav>
+  <div class="cursor"></div>
+  <div id="home">
+    <div class="home-text home-line1"> 
+      Hello, my name is
+    </div>
+	  <div class="home-name">
+      JULIANNE LIN  
+    </div>
+    <div class="home-text home-line3">
+      Web Developer | Student 
+    </div>
+
+	<div class="container single-view wrapper overlay">
+      <div class ="scaling-svg-container"  style="padding-bottom: 100%"> 
+       <button href="#about" class="aboutButton" onClick='window.location="#about"'>
+        <span>Learn more about me </span>
+      </button> 
+      </div>
+    </div>   
+  </div>
+  <div id="about"> 
+      <div class = "container-fluid">
+          <div class = "about-me">About me </div>
+              <div class="content row">
+                  <div class = "col-4" > 
+                    <i class="fas fa-user-graduate fa fa-4x icon"></i>
+                    <h5>I'm currently a second year student at University of Toronto with double major in Statistics and Cognitive Science. </h5>
+                  </div>
+                  <div class = "col-4"> 
+                    <i class="fas fa-code fa fa-4x icon"></i>
+                    <h5> I code in primarily Java and Python but I've also been developing webapps with various front end technologies like React.js, JavaScript, and Meteor.js.
+                    </h5>  
+                  </div>
+                  <div class = "col-4">  
+                    <i class = "fas fa-folder fa fa-4x icon"> </i>
+                    <h5>
+                        I like to solve challenges and always aim higher and better. Check out my projects here: <br>
+                        <button href = "#projects" class = "projectButton" onClick='window.location="#projects"'> View My Projects </button>
+                    </h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  <div id = "projects">
+    <div class = "projects"> My Projects  </div>
+      <div class="row align-items-left rowm">
+        <div class="col-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/e7.png" alt="Avatar" style="width:350px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="projects-title">Epic Seven Abyss Team Builder</div>
+                <div class="projects-text"> A full-stack web apple-touch-iconcation with React.js, Meteor.js and MongoDB that allows user to add, comment, or vote. </div>
+                <button onclick="window.location.href = 'https://github.com/jlin213/';" class = "e7visit"> View the Source Code </button>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-4">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/java.png" alt="Avatar" style="width:350px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="projects-title">Java Library System</div>
+                <div class="projects-text">A Java program with JavaFX for GUI and MySQL that allows the user to login and search, checked out, and return books.</div>
+                <button onclick="window.location.href = 'https://github.com/jlin213/';" class = "e7visit"> View the Source Code </button>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-4">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/treemap.png" alt="Avatar" style="width:350px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="projects-title">Treemap Visualization </div>
+                <div class="projects-text"> A Python program using the os library that interacts with computers file system and generates a geometric tree visualisation based on file size.</div>
+                <button onclick="window.location.href = 'https://github.com/jlin213/';" class = "e7visit"> View the Source Code </button>
+              </div>
+            </div>
+          </div>
+      </div>     
+  </div>
+  <div class= "row align-items-left rowm"> 
+      <div class="col-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/treemap.png" alt="Avatar" style="width:350px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="projects-title">Treemap Visualization </div>
+                <div class="projects-text"> A Python program using the os library that interacts with computers file system and generates a geometric tree visualisation based on file size.</div>
+                <button onclick="window.location.href = 'https://github.com/jlin213/';" class = "e7visit"> View the Source Code </button>
+              </div>
+            </div>
+          </div>
+        </div>   
+    </div>
+  </div>
+  <div id = "contact">
+  	<div class="contact-layout"> 
+        <div class = "contact-chat"> 
+        	<span class="contact-animation"> Want to chat more? </span>
+        </div>
+        <div class="contact-text"> Feel free to contact me through LinkedIn or Email: </div>
+        <button class = "btn" onclick="window.location.href = 'https://www.linkedin.com/in/julianne-lin';"> <i class = "fab fa-linkedin fa-3x"></i> </button>
+        Email: julianne.lin@mail.utoronto.ca
+        <h5> View my github here: 
+        <button class = "btn" onclick="window.location.href = 'https://github.com/jlin213';"> <i class = "fab fa-github fa-3x"></i> </button>
+        </h5>
+  	</div>
+  </div>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
