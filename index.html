@@ -11,6 +11,8 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,7 +62,7 @@
       Hello, I'm Julianne Lin
     </div>
     <div class="home-text">
-      Incoming Software Engineer at Meta <br>
+      Software Engineer at Meta <br>
       Previously at Coursera, Microsoft
     </div>
     <div class="mouse-scroll">
@@ -81,9 +83,10 @@
       </div>
       <div class="about-content">
         <div class="about-intro">
-          I am currently in my forth year at University of Toronto with double majors in Statistics and Cognitive
-          Science. I am interested in full-stack web development and software engineering in general. I am also
-          equipped with data analytic skills through upper statistics courses that I have taken.
+          I am currently a software engineer at Meta focuses on full-stack development. I studied at University of
+          Toronto with double majors in Statistics and Cognitive
+          Science. Throughout my experience, I have been an engineer who creates high-performance, accessible front-end experiences from end to end. Focused on user-friendly, scalable, and high-quality products, regardless of the technology stack.
+
           <div class="skills-container">
             <div class="skills-big-title">Skills</div>
             <div class="skills-title" id="skills-title-1">
@@ -103,45 +106,81 @@
           </div>
         </div>
         <div class="about-timeline">
-          <div class="timeline-container">
-            <div class="timeline">
-              <ul>
-                <li>
-                  <div class="timeline-content">
-                    <h3 class="date">May - August, 2020 </h3>
-                    <h1>Coursera</h1>
-                    <p>Software Engineering Intern</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="timeline-content">
-                    <h3 class="date">June - September, 2021 </h3>
-                    <h1>Microsoft</h1>
-                    <p>Software Engineering Intern</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="timeline-content">
-                    <h3 class="date">July 2022</h3>
-                    <h1>Meta</h1>
-                    <p>Full-time Software Engineer</p>
-                  </div>
-                </li>
-              </ul>
+          <div class="skills-big-title">Experience</div>
+          <div class="timeline-v2-collapsible">
+            <div class="timeline-v2-collapsible-title">
+              Software Engineering Intern @ Cousera &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; May 2020 - August 2020
+
+              <ion-icon  style="display:block"name="add-outline"></ion-icon>         
+              <ion-icon style="display:none" name="remove-outline"></ion-icon>         
+
+             </div>
+            <div class="timeline-v2-content-wrapper">
+              <div class="timeline-v2-content">
+                <p>
+                <li>Implemented automated visual testing with page snapshots using Percy, Puppeteer, and Javascript. Launched
+                  initial steps to integrate visual testing with CI/CD with Github Actions </li>
+                <li> Improved and simplified an internal tool to browse, edit, and add different variants of EOI forms of different
+                  degrees for marketing team using Retool, Javascript and JSON</li>
+                <li>  Fixed rendering issues of EOI forms and Checklist with Graphql and React that increases the page traffic and
+                  degree interest</li></p>
+
+              </div>
             </div>
           </div>
+          <div class="timeline-v2-collapsible">
+            <div class="timeline-v2-collapsible-title">
+              Software Engineering Intern @ Microsoft &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; June 2021 - September 2021
+              <ion-icon  style="display:block"name="add-outline"></ion-icon>         
+              <ion-icon  style="display:none" name="remove-outline"></ion-icon>         
+             </div>
+            <div class="timeline-v2-content-wrapper">
+              <div class="timeline-v2-content">
+                <p>
+                  <li> Implementing onboarding walkthrough experience for the Quotes workspace which orients users towards the
+                  various capabilities within the workspace </li>
+                <li>Building reusable web-components using React, Typescript, HTML, CSS that will be leveraged by cross-functional
+                  teams with over 1000 engineers</li>
+                <li>Writing supporting documentation for connecting backend API services to send JSON data to Guided Tour
+                  feature and render different customized web-components in frontend</li></p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-v2-collapsible">
+            <div class="timeline-v2-collapsible-title">
+              Software Engineering @ Meta &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;  August 2022 - Present
+              <ion-icon  style="display:block"name="add-outline"></ion-icon>         
+              <ion-icon  style="display:none" name="remove-outline"></ion-icon>         
 
+             </div>
+            <div class="timeline-v2-content-wrapper">
+              <div class="timeline-v2-content">
+               
+                <p>
+                  <li>Built GenAI Transparency consumer experience for Facebook/Instagram Feed on Web using React, GraphQL,
+                  Typescript. Worked closely with PMs, product designers, data scientists, and data engineers to deliver a reliable and
+                  performant user experience </li>
+                  <a href="https://www.meta.com/help/artificial-intelligence/How-ai-generated-images-in-ads-are-identified-and-labeled-on-Meta/" target="_blank" > Learn more ↗</a>
+                  <li> Integrated blocking consent flow experience with payment as Ad-Free Subscription that reached 340M MAU with
+                  over 30k subscribers within EU in November 2023 using React, Typescript and Bloks. </li>
+                  <a href="https://about.fb.com/news/2024/11/facebook-and-instagram-to-offer-subscription-for-no-ads-in-europe/" target="_blank" > Learn more ↗</a>
+                  <li> Driven launch safeguards including logging, alerts, and dashboard </li>
+                  <li> Implemented several experiments to drive consent opt-in </li>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </div>
   <div id="contact" class="contact">
     <div class="contact-title">
       CONTACT
     </div>
     <div class="contact-email">
-      julianne.lin@mail.utoronto.ca <br>
-      (416)854-5971
+      julianne.lin@alumni.utoronto.ca <br>
+      (650)4709649
     </div>
     <div>
       <a href="https://github.com/jlin213" class="contact-visit">View my projects &#8594; </a>
@@ -168,13 +207,11 @@
     <div class="outro-container">
       <div class="outro-text">
         Software Engineer <br>
-        Toronto
+        Mountain View, CA
       </div>
-        <a href="https://www.linkedin.com/in/julianne-lin/" class="outro-link">LINKEDIN</a>
-        <a href="https://github.com/jlin213" class="outro-link">GITHUB</a>
-        <a href="https://www.facebook.com/juliannelinnn/" class="outro-link"> FACEBOOK</a>
-        <a href="https://www.instagram.com/julianne.linn/" class="outro-link">INSTAGRAM</a>
-      <footer class="end-footer"> <small>&copy; Copyright 2021, Julianne Lin. All Rights Reserved</small> </footer>
+      <a href="https://www.linkedin.com/in/julianne-lin/" class="outro-link">LINKEDIN</a>
+      <a href="https://github.com/jlin213" class="outro-link">GITHUB</a>
+      <footer class="end-footer"> <small>&copy; Copyright 2025, Julianne Lin. All Rights Reserved</small> </footer>
     </div>
   </div>
 

@@ -166,14 +166,17 @@ span {
   margin-top: 1rem;
   font-weight: 400;
   text-align: left;
+
+  display: flex;
 }
 
 .about-intro {
   width: 40%;
-  float: left;
   font-size: 1.2rem;
   font-weight:500;
   line-height: 2vw;
+  display: inline-block;
+
 }
 
 .skills-container{
@@ -194,7 +197,7 @@ span {
 }
 
 .skills-details{
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 #skills-details-1, #skills-details-2, #skills-details-3, #skills-details-4 {
   overflow: hidden;
@@ -220,12 +223,22 @@ span {
     no-repeat;
   transition:0.5s;
 }
-#skills-title-1:hover, #skills-title-2:hover , #skills-title-3:hover ,#skills-title-4:hover {
-  --d: 85%;
+#skills-title-1:hover, #skills-title-3:hover  {
+  --d: 80%;
+
 }
 
+#skills-title-2:hover {
+  --d: 74%;
+}
+
+#skills-title-4:hover {
+  --d: 70%;
+}
 .about-timeline{
-  margin-left: 35rem;
+  padding-left: 10rem;
+  width: 75%;
+  height: 100%;
 }
 
 .timeline-container {
@@ -281,7 +294,7 @@ span {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background-color: gray;
+    background-color:  gray;
   }
   .timeline ul li {
     width: 50%;
@@ -321,6 +334,58 @@ span {
     position: absolute;
     top: -30px;
   }
+}
+
+// job experience timeline v2 
+
+/* Style the button that is used to open and close the collapsible content */
+.timeline-v2-collapsible {
+  --xy-padding: 14px;
+  --border-radius: 6px;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  --transition-ms: 0.3s;
+  margin: 1em 0;
+  max-width: 700px;
+}
+
+.timeline-v2-collapsible-title{
+  display: flex; 
+  align-items:center; 
+  justify-content: space-between;
+  user-select: none;
+  padding: var(--xy-padding);
+  background-color: #d6bfb6;
+  border-radius: var(--border-radius) var(--border-radius) var(--border-radius) var(--border-radius);
+  cursor: pointer;
+}
+
+.timeline-v2-content {
+  padding: 0 var(--xy-padding);
+  // display: none;
+  border: 1px solid #dddddd;
+  border-top: none;
+  border-radius: 0 0 var(--border-radius) var(--border-radius) ;
+  
+  overflow: hidden;
+  cursor: default;
+  // background-color: red;
+}
+.timeline-v2-content-wrapper {
+  display:grid; 
+  grid-template-rows: 0fr;
+  background-color: white;
+  transition: grid-template-rows 0.3ms ease-out;
+}
+
+
+.timeline-v2-collapsible-open .timeline-v2-content-wrapper{
+  grid-template-rows: 1fr;
 }
 
 .contact{

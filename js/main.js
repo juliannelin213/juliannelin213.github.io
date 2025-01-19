@@ -5,6 +5,59 @@ var $nav2 = $("#nav-item-about");
 var $nav3 = $("#nav-item-contact");
 
 
+var coll = document.getElementsByClassName("timeline-v2-collapsible");
+$("a").on("click", function(event) {
+    // Prevent the default action (i.e., following the link)
+    if($(this).attr('href').contains("https")){
+        event.preventDefault();
+
+    // Stop the event from bubbling up to parent elements
+    event.stopPropagation();
+    
+    window.open($(this).attr('href'), '_blank');
+    }
+    
+
+
+    // Optionally, trigger the default behavior manually if needed
+    // window.location.href = $(this).attr("href");
+  });
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    
+    this.classList.toggle("timeline-v2-collapsible-open");
+    var content = this.firstChild.nextElementSibling;
+    var icons = content.children;
+    console.log(content);
+
+    if(icons[0].style.display == 'block')
+        {
+        icons[0].style.display = 'none';
+        icons[1].style.display = 'block';
+        content.style.borderRadius ='6px 6px 0 0';
+        }
+    
+    else
+    {  
+        icons[1].style.display = 'none';
+        icons[0].style.display = 'block'
+        content.style.borderRadius ='6px';
+    }
+    for (var j = 0; j< coll.length; j++){
+        if(!coll[j].isEqualNode(this)){
+            if(coll[j].classList.contains("timeline-v2-collapsible-open")){
+                coll[j].classList.toggle("timeline-v2-collapsible-open");
+                content.style.borderRadius ='6px';
+                coll[j].firstChild.nextElementSibling.children[1].style.display = 'none';
+                coll[j].firstChild.nextElementSibling.children[0].style.display = 'block';
+            }
+           
+        }
+    }
+    
+  });
+}
+
 function isScrolledIntoView(elem){
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
